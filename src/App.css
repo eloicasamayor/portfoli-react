@@ -297,6 +297,15 @@ section {
 #portfolio ul li mark {
   padding: 0.5em 1em;
 }
+.btn-visitar-projecte {
+  background-color: var(--color-principal);
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  float: right;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -398,6 +407,9 @@ footer p {
   }
   #portfolio ul li mark {
     padding: 10px;
+  }
+  .icon-btn-link {
+    color: var(--color-negre);
   }
   section {
     padding: 0;

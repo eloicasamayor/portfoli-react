@@ -1,8 +1,11 @@
 export default function ItemProjecte({
   titol,
   descripcio,
+  img,
+  tags,
   contingut,
   descripcioFoto,
+  link,
 }) {
   return (
     <li class="tarjeta sombra">
@@ -10,14 +13,14 @@ export default function ItemProjecte({
         <mark>{titol}</mark>
       </h3>
       <h4>{descripcio}</h4>
-      <span class="portfolio-tag">HTML</span>
-      <span class="portfolio-tag">React</span>
+      {tags.map((t) => {
+        return <span class="portfolio-tag">{t}</span>;
+      })}
       <p>{contingut}</p>
-      <img
-        src="https://git.az/source/services/2/photo/original/web.jpg"
-        alt={descripcioFoto}
-        width="250px"
-      />
+      <img src={img} alt={descripcioFoto} width="250px" />
+      <a className="btn-visitar-projecte" href={link}>
+        Veure projecte ❯
+      </a>
     </li>
   );
 }
