@@ -10,7 +10,7 @@ function App() {
     {
       titol: "Calculadora",
       descripcio: "App de calculadora amb React",
-      img: "/img/calculadora.PNG",
+      img: "https://git.az/source/services/2/photo/original/web.jpg",
       tags: ["html", "css", "React"],
       contingut: "Petita app de calculadora feta amb React des de 0",
       link: "https://eloicasamayor.github.io/calculadora/",
@@ -46,6 +46,35 @@ function App() {
       link: "https://eloicasamayor.github.io/calculadora/",
     },
   ];
+
+  let socialLinks = [
+    {
+      url: "http://www.linkedin.com/in/eloicasamayor",
+      nom: "linkedin",
+      icon: "fab fa-linkedin",
+      compte: "eloicasamayor",
+    },
+    {
+      url: "mailto:eloi.casamayor@gmail.com",
+      nom: "email",
+      icon: "fas fa-envelope",
+      compte: "eloicasamayor@gmail.com",
+    },
+    {
+      url: "http://www.twitter.com/eloicasamayor",
+      nom: "twitter",
+      icon: "fab fa-twitter",
+      compte: "@eloicasamayor",
+    },
+
+    {
+      url: "http://www.github.com/eloicasamayor",
+      nom: "github",
+      icon: "fab fa-github",
+      compte: "@eloicasamayor",
+    },
+  ];
+
   return (
     <div className="App">
       <SvgDalt />
@@ -57,8 +86,8 @@ function App() {
           <br />
           <mark>Web developer</mark>
         </h1>
-        <div class="pilota-animada"></div>
-        <a class="link-center-home" href="#contact">
+        <div className="pilota-animada"></div>
+        <a className="link-center-home" href="#contact">
           Contact me
         </a>
         <SvgBaix />
@@ -66,19 +95,19 @@ function App() {
 
       <section id="about_me">
         <SvgDalt />
-        <div class="section-wrapper">
+        <div className="section-wrapper">
           <h2>
             <mark>About me</mark>
           </h2>
-          <div class="about-div">
+          <div className="about-div">
             <img
-              class="img-about_me sombra"
-              src="eloi-sense-background.png"
+              className="img-about_me sombra"
+              src={"eloi-sense-background.png"}
               alt="Eloi Casamayor"
             />
-            <div class="img-wrapper"></div>
+            <div className="img-wrapper"></div>
 
-            <p class="tarjeta sombra">
+            <p className="tarjeta sombra">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               vehicula convallis urna ac semper. Sed nisl nulla, bibendum a
               tellus in, condimentum volutpat felis. Proin vel finibus nisi.
@@ -95,14 +124,15 @@ function App() {
 
       <section id="portfolio">
         <SvgDalt />
-        <div class="section-wrapper">
+        <div className="section-wrapper">
           <h2>
             <mark>Portfolio</mark>
           </h2>
           <ul>
-            {projectes.map((p) => {
+            {projectes.map((p, i) => {
               return (
                 <ItemProjecte
+                  key={i}
                   titol={p.titol}
                   descripcio={p.descripcio}
                   img={p.img}
@@ -119,52 +149,29 @@ function App() {
       </section>
       <section id="contact">
         <SvgDalt />
-        <div class="section-wrapper">
+        <div className="section-wrapper">
           <h2>
             <mark>Contact me</mark>
           </h2>
-          <div class="content-contact">
-            <div class="contact-form">
+          <div className="content-contact">
+            <div className="contact-form">
               <h3>Send me a message</h3>
               <Form />
             </div>
-            <div class="social-media-content">
+            <div className="social-media-content">
               <h3>My social media</h3>
-              <ul class="social-media-list">
-                <SocialLink url="url/de/la/web" />
-                {/*<SocialLink
-                  url="http://www.linkedin.com/in/eloicasamayor"
-                  nom="github"
-                  icon="fab fa-github"
-                  compte="eloicasamayor"
-                />*/}
-
-                <a href="mailto:eloi.casamayor@gmail.com">
-                  <li class="social sombra tarjeta">
-                    github<i class="fab fa-github"></i>
-                    <span class="detall-compte-social">eloicasamayor</span>
-                  </li>
-                </a>
-                <a href="mailto:eloi.casamayor@gmail.com">
-                  <li class="social sombra tarjeta">
-                    email <i class="fas fa-envelope"></i>
-                    <span class="detall-compte-social">
-                      eloi.casamayor@gmail.com
-                    </span>
-                  </li>
-                </a>
-                <a href="http://www.twitter.com/eloicasamayor">
-                  <li class="social sombra tarjeta">
-                    twitter <i class="fab fa-twitter"></i>
-                    <span class="detall-compte-social">@eloicasamayor</span>
-                  </li>
-                </a>
-                <a href="http://www.github.com/eloicasamayor">
-                  <li class="social sombra tarjeta">
-                    linkedin <i class="fab fa-linkedin"></i>
-                    <span class="detall-compte-social">eloicasamayor</span>
-                  </li>
-                </a>
+              <ul className="social-media-list">
+                {socialLinks.map((s, n) => {
+                  return (
+                    <SocialLink
+                      key={n}
+                      url={s.url}
+                      nom={s.nom}
+                      icon={s.icon}
+                      compte={s.compte}
+                    />
+                  );
+                })}
               </ul>
             </div>
           </div>

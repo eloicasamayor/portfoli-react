@@ -1,8 +1,8 @@
 export default function Header() {
   return (
-    <header class="sticky">
+    <header className="sticky">
       <span id="toggle-menu-mobile">☰</span>
-      <div id="menu" class="menu-hidden">
+      <div id="menu" className="menu-hidden">
         <nav>
           <a href="#home">Home</a>
           <a href="#about_me">About me</a>

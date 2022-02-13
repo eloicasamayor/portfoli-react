@@ -1,7 +1,7 @@
 export default function SvgDalt() {
   return (
     <svg
-      class="svg-dalt"
+      className="svg-dalt"
       viewBox="0 0 1440 811"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

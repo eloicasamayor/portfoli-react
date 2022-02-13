@@ -1,7 +1,7 @@
 export default function SvgBaix() {
   return (
     <svg
-      class="svg-baix"
+      className="svg-baix"
       viewBox="0 0 1440 521"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
