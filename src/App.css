@@ -187,7 +187,8 @@ p {
   margin-top: -315px;
 }
 #portfolio p {
-  margin: 10px 0 5px 0;
+  margin: 10px 0;
+  font-size: 1.2em;
 }
 .portfolio-tag {
   font-size: 12px;
@@ -276,10 +277,11 @@ section {
 }
 #portfolio ul li img {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 .tarjeta {
   background-color: var(--color-tarjeta);
-  padding: 20px;
+
   border-radius: 10px;
   transition: all 500ms ease-in-out;
 }
@@ -290,8 +292,12 @@ section {
 .sombra {
   box-shadow: 4px 4px var(--color-sombra);
 }
+.contingut-tarjeta {
+  padding: 15px;
+}
 
 #portfolio ul li h3 {
+  display: none;
   margin: -30px 0px 30px 0px;
 }
 #portfolio ul li mark {
@@ -299,13 +305,15 @@ section {
 }
 .btn-visitar-projecte {
   box-sizing: border-box;
-  background-color: var(--color-principal);
+
   margin-top: 5px;
   padding: 10px;
   border: 1px solid var(--color-negre);
-  border-radius: 5px;
   font-weight: bold;
   float: right;
+}
+.clear {
+  clear: both;
 }
 .btn-visitar-projecte:hover {
   background-color: var(--color-secundari);
