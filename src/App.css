@@ -197,6 +197,18 @@ p {
   margin: 10px 20px 10x 10px;
   border-radius: 10px;
 }
+.div-filtres-projectes {
+  padding: 20px;
+  display: flex;
+}
+.div-filtres-projectes input {
+  height: 15px;
+  margin: 0;
+  padding: 0;
+}
+.div-filtres-projectes label {
+  padding: 15px 15px 15px 0;
+}
 
 li {
   list-style-type: none;

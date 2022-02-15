@@ -5,7 +5,9 @@ import SvgBaix from "./SvgBaix";
 import SvgDalt from "./SvgDalt";
 import Form from "./Form";
 import SocialLink from "./SocialLink";
+import { useState } from "react";
 function App() {
+  let tags = ["React", "HTML", "CSS", "Design", "Flutter"];
   let projectes = [
     {
       titol: "Calculadora",
@@ -85,6 +87,10 @@ function App() {
     },
   ];
 
+  const [tagsSeleccionats, setTagsSeleccionats] = useState([]);
+  const canviarFiltresProjectes = (tag) => {
+    console.log("tag " + { tag });
+  };
   return (
     <div className="App">
       <SvgDalt />
@@ -138,6 +144,23 @@ function App() {
           <h2>
             <mark>Portfolio</mark>
           </h2>
+          <div className="div-filtres-projectes">
+            {tags.map((t, i) => {
+              return (
+                <label key={i}>
+                  <input
+                    type="checkbox"
+                    id={t}
+                    value={t}
+                    onClick={() => canviarFiltresProjectes(t.toString)}
+                  />{" "}
+                  {t}
+                </label>
+              );
+            })}
+          </div>
+          <div>{tagsSeleccionats}</div>
+
           <ul>
             {projectes.map((p, i) => {
               return (
