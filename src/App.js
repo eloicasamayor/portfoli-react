@@ -1,64 +1,13 @@
 import "./App.css";
 import Header from "./Header";
-import ItemProjecte from "./ItemProjecte";
+
 import SvgBaix from "./SvgBaix";
 import SvgDalt from "./SvgDalt";
 import Form from "./Form";
 import SocialLink from "./SocialLink";
-import { useState } from "react";
-function App() {
-  let tags = ["React", "HTML", "CSS", "Design", "Flutter"];
-  let projectes = [
-    {
-      titol: "Calculadora",
-      descripcio: "App de calculadora amb React",
-      img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
-      tags: ["html", "css", "React", "from-scratch"],
-      contingut: "Petita app de calculadora feta amb React des de 0",
-      descripcioFoto: "Calculadora feta amb React",
-      link: "https://eloicasamayor.github.io/calculadora/",
-    },
-    {
-      titol: "Projecte 2",
-      descripcio: "Galeria de fotos React",
-      img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
-      tags: ["React", "useState"],
-      contingut:
-        "Projecte senzill de galeria de fotos fet amb React des de zero.",
-      descripcioFoto: "Galeria de fotos amb React",
-      link: "https://eloicasamayor.github.io/galeria-fotos-react/",
-    },
-    {
-      titol: "Projecte 3",
-      descripcio: "Portfolio Eloi",
-      img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
-      tags: ["html", "css", "react", "UI"],
-      contingut:
-        "Text d'explicació del projecte 3 amb totes les caracteristiques i etc etc.",
-      descripcioFoto: "projecte de portfoli Eloi",
-      link: "https://github.com/eloicasamayor/portfoli-react",
-    },
-    {
-      titol: "Projecte 4",
-      descripcio: "Blog amb Gatsby i Contentful",
-      img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
-      tags: ["React", "Contentful", "GraphQL"],
-      contingut:
-        "Desenvolupament d'un lloc web construit amb Gatsby i amb el CMS Contentful",
-      descripcioFoto: "blog gastby contentful",
-      link: "https://eloi-gatsby-cms-blog.netlify.app/",
-    },
-    {
-      titol: "Projecte 4",
-      descripcio: "Lloc web de receptes basat en Gatsby",
-      img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
-      tags: ["Gatsby", "React", "GraphQL"],
-      contingut: "Construcció d'un lloc web usant Gatsby",
-      descripcioFoto: "projecte gatsby receptes",
-      link: "https://eloi-gatsby-cms-blog.netlify.app/",
-    },
-  ];
 
+import Portfolio from "./Components/Portfolio";
+function App() {
   let socialLinks = [
     {
       url: "http://www.linkedin.com/in/eloicasamayor",
@@ -87,10 +36,7 @@ function App() {
     },
   ];
 
-  const [tagsSeleccionats, setTagsSeleccionats] = useState([]);
-  const canviarFiltresProjectes = (tag) => {
-    console.log("tag " + { tag });
-  };
+  
   return (
     <div className="App">
       <SvgDalt />
@@ -140,44 +86,7 @@ function App() {
 
       <section id="portfolio">
         <SvgDalt />
-        <div className="section-wrapper">
-          <h2>
-            <mark>Portfolio</mark>
-          </h2>
-          <div className="div-filtres-projectes">
-            {tags.map((t, i) => {
-              return (
-                <label key={i}>
-                  <input
-                    type="checkbox"
-                    id={t}
-                    value={t}
-                    onClick={() => canviarFiltresProjectes(t.toString)}
-                  />{" "}
-                  {t}
-                </label>
-              );
-            })}
-          </div>
-          <div>{tagsSeleccionats}</div>
-
-          <ul>
-            {projectes.map((p, i) => {
-              return (
-                <ItemProjecte
-                  key={i}
-                  titol={p.titol}
-                  descripcio={p.descripcio}
-                  img={p.img}
-                  tags={p.tags}
-                  contingut={p.contingut}
-                  descripcioFoto={p.descripcioFoto}
-                  link={p.link}
-                />
-              );
-            })}
-          </ul>
-        </div>
+        <Portfolio/>
         <SvgBaix />
       </section>
       <section id="contact">

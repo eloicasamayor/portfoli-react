@@ -24,7 +24,7 @@ export default function ItemProjecte({
         })}
         <p>{contingut}</p>
 
-        <a className="btn-visitar-projecte" href={link}>
+        <a className="btn-visitar-projecte" href={link} target="_blank">
           Veure projecte ❯
         </a>
         <div className="clear"></div>
