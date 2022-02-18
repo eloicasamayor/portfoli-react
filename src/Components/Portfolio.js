@@ -1,9 +1,9 @@
 import ItemProjecte from "./ItemProjecte";
-import { useState } from "react";
-export default function Portfolio(){
-    let tags = ["React", "HTML", "CSS", "Design", "Flutter"];
+import { useState, useRef, useEffect } from "react";
+export default function Portfolio() {
   let projectes = [
     {
+      id: 1,
       titol: "Calculadora",
       descripcio: "App de calculadora amb React",
       img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
@@ -13,6 +13,7 @@ export default function Portfolio(){
       link: "https://eloicasamayor.github.io/calculadora/",
     },
     {
+      id: 2,
       titol: "Projecte 2",
       descripcio: "Exercicis React",
       img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
@@ -23,16 +24,18 @@ export default function Portfolio(){
       link: "https://eloicasamayor.github.io/exercicis-react/",
     },
     {
+      id: 3,
       titol: "Projecte 3",
       descripcio: "Portfolio Eloi",
       img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
-      tags: ["html", "css", "react", "UI"],
+      tags: ["html", "css", "UI"],
       contingut:
         "Text d'explicació del projecte 3 amb totes les caracteristiques i etc etc.",
       descripcioFoto: "projecte de portfoli Eloi",
       link: "https://github.com/eloicasamayor/portfoli-react",
     },
     {
+      id: 4,
       titol: "Projecte 4",
       descripcio: "Blog amb Gatsby i Contentful",
       img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
@@ -43,6 +46,7 @@ export default function Portfolio(){
       link: "https://eloi-gatsby-cms-blog.netlify.app/",
     },
     {
+      id: 5,
       titol: "Projecte 4",
       descripcio: "Lloc web de receptes basat en Gatsby",
       img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
@@ -53,43 +57,89 @@ export default function Portfolio(){
     },
   ];
 
-  
-  const [tagsSeleccionats, setTagsSeleccionats] = useState({"React":true, "HTML":true, "CSS":true, "Design":true}, );
-  const canviarFiltresProjectes = (tag) => {
-    
-    //console.log("tag " + tag);
-    setTagsSeleccionats((prevState)=>(Object.keys(prevState).map((item)=> {
-        console.log(item+"="+prevState[item]);
-        
-        return (item===tag? {item:!prevState[item]}:{item:prevState[item]});
-    })));
-  };
-    return(
-        <div className="section-wrapper">
-          <h2>
-            <mark>Portfolio</mark>
-          </h2>
-          <div className="div-filtres-projectes">
-            {tags.map((t, i) => {
-              return (
-                <label key={i}>
-                  <input
-                    type="checkbox"
-                    checked={tagsSeleccionats.t}
-                    id={t}
-                    value={t}
-                    onChange={() => canviarFiltresProjectes(t)}
-                  />{" "}
-                  {t}
-                </label>
-              );
-            })}
-          </div>
-          <div>{JSON.stringify(tagsSeleccionats)}</div>
+  const [mostrarProjectes, setMostrarProjectes] = useState([
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+  ]);
 
-          <ul>
-            {projectes.map((p, i) => {
-              return (
+  const [arrayTags, setArrayTags] = useState([
+    { React: true },
+    { HTML: true },
+    { CSS: true },
+    { Gatsby: true },
+    { Design: true },
+  ]);
+  const [tagsSeleccionats, setTagsSeleccionats] = useState([
+    "React",
+    "HTML",
+    "CSS",
+    "Gatsby",
+    "Design",
+  ]);
+  const canviarFiltresProjectes = () => {
+    setArrayTags(refsArray.current.map((r) => ({ [r.value]: r.checked })));
+  };
+
+  const shaDeMostarElProjecte = (tagsProjecte) => {
+    return tagsProjecte
+      .map((t) => t.toUpperCase())
+      .some((t) => tagsSeleccionats.includes(t));
+  };
+
+  useEffect(() => {
+    let arraysTrue = arrayTags.map((t) =>
+      Object.values(t)[0] ? Object.keys(t)[0].toUpperCase() : null
+    );
+    setTagsSeleccionats((v) =>
+      arraysTrue.filter((elementArray) => elementArray !== null)
+    );
+  }, arrayTags);
+  useEffect(() => {
+    setMostrarProjectes(projectes.map((p) => shaDeMostarElProjecte(p.tags)));
+  }, [tagsSeleccionats]);
+
+  const refsArray = useRef([]);
+
+  return (
+    <div className="section-wrapper">
+      <h2>
+        <mark>Portfolio</mark>
+      </h2>
+      <p>{mostrarProjectes}</p>
+      <div className="div-filtres-projectes">
+        {arrayTags.map((ObjecteTag, i) => {
+          return (
+            <label key={i}>
+              <input
+                type="checkbox"
+                checked={Object.values(ObjecteTag)[0]}
+                id={Object.keys(ObjecteTag)[0]}
+                value={Object.keys(ObjecteTag)[0]}
+                ref={(el) => (refsArray.current[i] = el)}
+                onChange={() => canviarFiltresProjectes()}
+              />{" "}
+              {Object.keys(ObjecteTag)[0]}
+            </label>
+          );
+        })}
+      </div>
+
+      <ul>
+        {projectes.map((p, i) => {
+          return (
+            <>
+              {/*<p>{p.tags.map((t) => t.toUpperCase())}</p>
+              <p>
+                {arrayTags.map((t) =>
+                  Object.values(t)[0] ? Object.keys(t)[0].toUpperCase() : ""
+                )}
+                </p>*/}
+
+              {mostrarProjectes[i] && (
                 <ItemProjecte
                   key={i}
                   titol={p.titol}
@@ -100,9 +150,11 @@ export default function Portfolio(){
                   descripcioFoto={p.descripcioFoto}
                   link={p.link}
                 />
-              );
-            })}
-          </ul>
-        </div>
-    )
+              )}
+            </>
+          );
+        })}
+      </ul>
+    </div>
+  );
 }
