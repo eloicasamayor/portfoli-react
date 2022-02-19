@@ -206,6 +206,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   padding: 1em;
+  flex-wrap: wrap;
 }
 /* checkbox TOGGLE */
 input[type="checkbox"].toggle {
@@ -220,6 +221,7 @@ input[type="checkbox"].toggle + label {
   align-items: center;
   position: relative;
   cursor: pointer;
+  padding: 0.4em 0;
 }
 
 input[type="checkbox"].toggle + label::before {
