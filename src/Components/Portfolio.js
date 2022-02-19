@@ -110,20 +110,23 @@ export default function Portfolio() {
         <mark>Portfolio</mark>
       </h2>
       <p>{mostrarProjectes}</p>
-      <div className="div-filtres-projectes">
+      <div className="div-filtres-projectes tarjeta sombra">
         {arrayTags.map((ObjecteTag, i) => {
           return (
-            <label key={i}>
+            <>
               <input
                 type="checkbox"
                 checked={Object.values(ObjecteTag)[0]}
-                id={Object.keys(ObjecteTag)[0]}
-                value={Object.keys(ObjecteTag)[0]}
+                id={Object.keys(ObjecteTag)[0].toLowerCase()}
+                value={Object.keys(ObjecteTag)[0].toLowerCase()}
                 ref={(el) => (refsArray.current[i] = el)}
                 onChange={() => canviarFiltresProjectes()}
-              />{" "}
-              {Object.keys(ObjecteTag)[0]}
-            </label>
+                className="toggle"
+              />
+              <label key={i} htmlFor={Object.keys(ObjecteTag)[0].toLowerCase()}>
+                {Object.keys(ObjecteTag)[0].toLowerCase()}
+              </label>
+            </>
           );
         })}
       </div>
