@@ -36,7 +36,6 @@ function App() {
     },
   ];
 
-  
   return (
     <div className="App">
       <SvgDalt />
@@ -70,14 +69,23 @@ function App() {
             <div className="img-wrapper"></div>
 
             <p className="tarjeta sombra">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              vehicula convallis urna ac semper. Sed nisl nulla, bibendum a
-              tellus in, condimentum volutpat felis. Proin vel finibus nisi.
-              Vivamus vestibulum blandit urna quis tempus. Integer aliquam eu
-              ante non semper. Vivamus justo mi, rhoncus quis nibh ac, malesuada
-              pulvinar massa. Etiam ornare facilisis ex, at placerat erat.
-              nulla, bibendum a tellus in, condimentum volutpat felis. Proin vel
-              finibus nisi.
+              Hello, I am Eloi Casamayor Esteve, a experienced software
+              developer who is taking his first steps as a{" "}
+              <b>modern frontend developer</b>.
+              <br />
+              <br />
+              With a 5 years background in production-ready software development
+              for engineering purposes, I am reorienting my carrer towards this
+              amazing and very active field.
+              <br />
+              <br />
+              Having attained a gread domain in HTML and CSS, now I am centered
+              on <b>React application</b> development, including most used
+              libraries as Redux and React-based frameworks as Gatsby.
+              <br />
+              <br />
+              Do you want to know more about me? Have a look take a look at my
+              projects and contact me!
             </p>
           </div>
         </div>
@@ -86,7 +94,7 @@ function App() {
 
       <section id="portfolio">
         <SvgDalt />
-        <Portfolio/>
+        <Portfolio />
         <SvgBaix />
       </section>
       <section id="contact">
