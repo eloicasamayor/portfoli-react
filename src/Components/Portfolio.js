@@ -38,7 +38,8 @@ export default function Portfolio() {
       id: 4,
       titol: "Projecte 4",
       descripcio: "Blog amb Gatsby i Contentful",
-      img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
+
+      img: "https://www.linkpicture.com/q/Captura_15.png",
       tags: ["React", "Contentful", "GraphQL"],
       contingut:
         "Desenvolupament d'un lloc web construit amb Gatsby i amb el CMS Contentful",
@@ -47,13 +48,33 @@ export default function Portfolio() {
     },
     {
       id: 5,
-      titol: "Projecte 4",
+      titol: "Projecte 5",
       descripcio: "Lloc web de receptes basat en Gatsby",
-      img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
+      img: "https://www.linkpicture.com/q/Captura_15.png",
       tags: ["Gatsby", "React", "GraphQL"],
       contingut: "Construcció d'un lloc web usant Gatsby",
       descripcioFoto: "projecte gatsby receptes",
       link: "https://eloi-gatsby-cms-blog.netlify.app/",
+    },
+    {
+      id: 6,
+      titol: "Projecte 6",
+      descripcio: "Flutter app clone",
+      img: "https://www.linkpicture.com/q/Captura_14.png",
+      tags: ["Flutter", "Dart", "Android"],
+      contingut: "Clone of the Feedly RSS reader android app made with flutter",
+      descripcioFoto: "projecte gatsby receptes",
+      link: "https://eloicasamayor.github.io/feedly_clone/#/",
+    },
+    {
+      id: 7,
+      titol: "Projecte 7",
+      descripcio: "Expenses Tracker",
+      img: "https://www.linkpicture.com/q/Captura_13.png",
+      tags: ["React", "State management"],
+      contingut: "Expenses tracker web app made with React",
+      descripcioFoto: "projecte gatsby receptes",
+      link: "https://eloicasamayor.github.io/ExpensesTracker/",
     },
   ];
 
@@ -72,6 +93,7 @@ export default function Portfolio() {
     { CSS: true },
     { Gatsby: true },
     { Design: true },
+    { Flutter: false },
   ]);
   const [tagsSeleccionats, setTagsSeleccionats] = useState([
     "React",
@@ -79,6 +101,7 @@ export default function Portfolio() {
     "CSS",
     "Gatsby",
     "Design",
+    "Flutter",
   ]);
   const canviarFiltresProjectes = () => {
     setArrayTags(refsArray.current.map((r) => ({ [r.value]: r.checked })));
