@@ -9,7 +9,10 @@ export default function ItemProjecte({
 }) {
   return (
     <li className="tarjeta sombra">
-      <img src={img} alt={descripcioFoto} width="250px" />
+      <div className="project-img-wrapper">
+        <img src={img} alt={descripcioFoto} width="250px" />
+      </div>
+
       <div className="contingut-tarjeta">
         <h3>
           <mark>{titol}</mark>
@@ -25,7 +28,7 @@ export default function ItemProjecte({
         <p>{contingut}</p>
 
         <a className="btn-visitar-projecte" href={link} target="_blank">
-          Veure projecte ❯
+          See the project ❯
         </a>
         <div className="clear"></div>
       </div>

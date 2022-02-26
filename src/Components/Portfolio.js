@@ -6,7 +6,7 @@ export default function Portfolio() {
       id: 1,
       titol: "Calculadora",
       descripcio: "App de calculadora amb React",
-      img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
+      img: "https://www.linkpicture.com/q/calculadora.png",
       tags: ["html", "css", "React", "from-scratch"],
       contingut: "Petita app de calculadora feta amb React des de 0",
       descripcioFoto: "Calculadora feta amb React",
@@ -27,7 +27,7 @@ export default function Portfolio() {
       id: 3,
       titol: "Projecte 3",
       descripcio: "Portfolio Eloi",
-      img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
+      img: "https://www.linkpicture.com/q/Captura_16.png",
       tags: ["html", "css", "UI"],
       contingut:
         "Text d'explicació del projecte 3 amb totes les caracteristiques i etc etc.",
