@@ -7,6 +7,7 @@ import Form from "./Form";
 import SocialLink from "./SocialLink";
 
 import Portfolio from "./Components/Portfolio";
+import AboutMe from "./Components/AboutMe";
 function App() {
   let socialLinks = [
     {
@@ -45,12 +46,39 @@ function App() {
         <h1>
           Eloi Casamayor
           <br />
-          <mark>Web developer</mark>
+          <mark>frontend developer</mark>
         </h1>
-        <div className="pilota-animada"></div>
+        {/*<div className="pilota-animada"></div>
         <a className="link-center-home" href="#contact">
           Contact me
-        </a>
+  </a>*/}
+        <div className="about-div">
+          <img
+            className="img-about_me sombra"
+            src={"eloi-sense-background.png"}
+            alt="Eloi Casamayor"
+          />
+          <div className="img-wrapper"></div>
+
+          <p className="tarjeta sombra">
+            Hello, I am Eloi Casamayor Esteve, a experienced software developer
+            who is taking his first steps as a <b>modern frontend developer</b>.
+            <br />
+            <br />
+            With a 5 years background in production-ready software development
+            for engineering purposes, I am reorienting my carrer towards this
+            amazing and very active field.
+            <br />
+            <br />
+            Having attained a gread domain in HTML and CSS, now I am centered on{" "}
+            <b>React application</b> development, including most used libraries
+            as Redux and React-based frameworks as Gatsby.
+            <br />
+            <br />
+            Do you want to know more about me? Have a look take a look at my
+            projects and contact me!
+          </p>
+        </div>
         <SvgBaix />
       </section>
 
@@ -60,34 +88,10 @@ function App() {
           <h2>
             <mark>About me</mark>
           </h2>
-          <div className="about-div">
-            <img
-              className="img-about_me sombra"
-              src={"eloi-sense-background.png"}
-              alt="Eloi Casamayor"
-            />
-            <div className="img-wrapper"></div>
-
-            <p className="tarjeta sombra">
-              Hello, I am Eloi Casamayor Esteve, a experienced software
-              developer who is taking his first steps as a{" "}
-              <b>modern frontend developer</b>.
-              <br />
-              <br />
-              With a 5 years background in production-ready software development
-              for engineering purposes, I am reorienting my carrer towards this
-              amazing and very active field.
-              <br />
-              <br />
-              Having attained a gread domain in HTML and CSS, now I am centered
-              on <b>React application</b> development, including most used
-              libraries as Redux and React-based frameworks as Gatsby.
-              <br />
-              <br />
-              Do you want to know more about me? Have a look take a look at my
-              projects and contact me!
-            </p>
-          </div>
+          <h3>
+            <mark>Education</mark>
+          </h3>
+          <AboutMe />
         </div>
         <SvgBaix />
       </section>

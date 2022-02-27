@@ -138,6 +138,7 @@ export default function Portfolio() {
           return (
             <>
               <input
+                key={"input-" + i}
                 type="checkbox"
                 checked={Object.values(ObjecteTag)[0]}
                 id={Object.keys(ObjecteTag)[0].toLowerCase()}
@@ -146,7 +147,10 @@ export default function Portfolio() {
                 onChange={() => canviarFiltresProjectes()}
                 className="toggle"
               />
-              <label key={i} htmlFor={Object.keys(ObjecteTag)[0].toLowerCase()}>
+              <label
+                key={"label-" + i}
+                htmlFor={Object.keys(ObjecteTag)[0].toLowerCase()}
+              >
                 {Object.keys(ObjecteTag)[0].toLowerCase()}
               </label>
             </>
@@ -167,7 +171,7 @@ export default function Portfolio() {
 
               {mostrarProjectes[i] && (
                 <ItemProjecte
-                  key={i}
+                  key={"projecte" + i}
                   titol={p.titol}
                   descripcio={p.descripcio}
                   img={p.img}
