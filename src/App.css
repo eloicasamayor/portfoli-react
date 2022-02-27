@@ -34,6 +34,9 @@ mark {
 .about-me-item {
   position: relative;
 }
+.about-me-item-content li {
+  font-size: 1.1rem;
+}
 
 .boleta {
   width: 20px;
@@ -45,7 +48,7 @@ mark {
   position: absolute;
 }
 .about-me-item-content {
-  border-left: 4px solid var(--color-secundari-clar);
+  border-left: 4px solid var(--color-secundari);
   padding: 15px 8px 8px 20px;
   margin-left: 20px;
 }
@@ -96,7 +99,7 @@ h4 {
   padding: 0px;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 5px 0px;
 }
 .svg-dalt {
@@ -198,7 +201,7 @@ p {
   max-width: 500px;
 }
 .about-div p::first-letter {
-  padding: 5px;
+  padding: 5px 2px;
   margin-right: 5px;
   border: 1px solid;
   font-weight: bold;
@@ -306,12 +309,21 @@ li {
 .social-media-list a {
   flex: 1;
 }
-
+.separacio {
+  height: 30px;
+}
 .social.tarjeta {
   background-color: var(--color-secundari);
-  color: black;
+  color: white;
+  padding: 15px;
 }
 .social.tarjeta > * {
+  color: white;
+}
+.social.tarjeta:hover {
+  color: black;
+}
+.social.tarjeta:hover > * {
   color: black;
 }
 
@@ -377,6 +389,9 @@ section {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
+#about_me h3 {
+  font-size: 1.8em;
+}
 .tarjeta {
   background-color: var(--color-tarjeta);
 
@@ -393,7 +408,13 @@ section {
 .contingut-tarjeta {
   padding: 15px;
 }
-
+.about-me-item-content ul {
+  padding-left: 20px;
+  margin-right: 0px;
+}
+.about-me-item-content ul li {
+  list-style-type: circle;
+}
 #portfolio ul li h3 {
   display: none;
   margin: -30px 0px 30px 0px;

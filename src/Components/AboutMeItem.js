@@ -7,7 +7,7 @@ export default function AboutMeItem({ ...props }) {
         <span className="data">{props.data}</span>
         <h3 className="titol">{props.titol}</h3>
         <h4 className="lloc">{props.lloc}</h4>
-        <p>{props.descripcio}</p>
+        {props.descripcio}
       </div>
     </div>
   );

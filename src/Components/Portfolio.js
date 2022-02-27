@@ -8,7 +8,7 @@ export default function Portfolio() {
       descripcio: "App de calculadora amb React",
       img: "https://www.linkpicture.com/q/calculadora.png",
       tags: ["html", "css", "React", "from-scratch"],
-      contingut: "Petita app de calculadora feta amb React des de 0",
+      contingut: "Little calculator app made with React from scratch",
       descripcioFoto: "Calculadora feta amb React",
       link: "https://eloicasamayor.github.io/calculadora/",
     },
@@ -19,7 +19,7 @@ export default function Portfolio() {
       img: "https://designsupply-web.com/public/assets/images/site/media/programming/react_min.png",
       tags: ["React", "useState"],
       contingut:
-        "Projecte senzill de galeria de fotos fet amb React des de zero.",
+        "Project that includes all react exercises from the frontend specialization course",
       descripcioFoto: "Galeria de fotos amb React",
       link: "https://eloicasamayor.github.io/exercicis-react/",
     },
@@ -28,9 +28,8 @@ export default function Portfolio() {
       titol: "Projecte 3",
       descripcio: "Portfolio Eloi",
       img: "https://www.linkpicture.com/q/Captura_16.png",
-      tags: ["html", "css", "UI"],
-      contingut:
-        "Text d'explicació del projecte 3 amb totes les caracteristiques i etc etc.",
+      tags: ["html", "css", "React"],
+      contingut: "The website you are currently seing. Made with React.",
       descripcioFoto: "projecte de portfoli Eloi",
       link: "https://github.com/eloicasamayor/portfoli-react",
     },
@@ -42,7 +41,7 @@ export default function Portfolio() {
       img: "https://www.linkpicture.com/q/Captura_15.png",
       tags: ["React", "Contentful", "GraphQL"],
       contingut:
-        "Desenvolupament d'un lloc web construit amb Gatsby i amb el CMS Contentful",
+        "Website built with Gatsby i and the CMS Contentful as the backend",
       descripcioFoto: "blog gastby contentful",
       link: "https://eloi-gatsby-cms-blog.netlify.app/",
     },
@@ -52,7 +51,8 @@ export default function Portfolio() {
       descripcio: "Lloc web de receptes basat en Gatsby",
       img: "https://www.linkpicture.com/q/Captura_15.png",
       tags: ["Gatsby", "React", "GraphQL"],
-      contingut: "Construcció d'un lloc web usant Gatsby",
+      contingut:
+        "Recipes site developed with Gatsby, following a Gatsby tutorial.",
       descripcioFoto: "projecte gatsby receptes",
       link: "https://eloi-gatsby-cms-blog.netlify.app/",
     },
@@ -73,8 +73,50 @@ export default function Portfolio() {
       img: "https://www.linkpicture.com/q/Captura_13.png",
       tags: ["React", "State management"],
       contingut: "Expenses tracker web app made with React",
-      descripcioFoto: "projecte gatsby receptes",
+      descripcioFoto: "Expenses Tracker app screenshot",
       link: "https://eloicasamayor.github.io/ExpensesTracker/",
+    },
+    {
+      id: 8,
+      titol: "Projecte 8",
+      descripcio: "Escolapios Californias Website",
+      img: "https://www.linkpicture.com/q/Captura_17.png",
+      tags: ["Wordpress", "CSS"],
+      contingut:
+        "Escolapios en las Californias website, done based on the WordPress CMS",
+      descripcioFoto: "Escolapios Californias' website screenshot",
+      link: "https://epiacalifornias.org/",
+    },
+    {
+      id: 9,
+      titol: "Projecte 9",
+      descripcio: "Educacion Solidaria en las Californias website",
+      img: "https://i.postimg.cc/44W5kjPW/werwer.png",
+      tags: ["Wordpress", "CSS"],
+      contingut:
+        "Educacion Solidaria en las Californias website, done based on the WordPress CMS",
+      descripcioFoto: "Escolapios Californias' website screenshot",
+      link: "https://edusolidaria.org/",
+    },
+    {
+      id: 10,
+      titol: "Projecte 10",
+      descripcio: "Wedding website",
+      img: "https://i.postimg.cc/44P84Yfb/Captura4.png",
+      tags: ["Wordpress", "CSS"],
+      contingut: "Wedding website, deployed with WordPress",
+      descripcioFoto: "Escolapios Californias' website screenshot",
+      link: "https://adrianayrene.com/",
+    },
+    {
+      id: 11,
+      titol: "Projecte 11",
+      descripcio: "Banking app UI Challange",
+      img: "https://i.postimg.cc/G3KDTYst/Captura3.png",
+      tags: ["Flutter", "UX/UI"],
+      contingut: "Little Flutter app made as a UI/UX challange",
+      descripcioFoto: "Banking app UI Challange",
+      link: "https://eloicasamayor.github.io/UIChallenge_BankingApp/#/detail_screen",
     },
   ];
 
@@ -92,16 +134,16 @@ export default function Portfolio() {
     { HTML: true },
     { CSS: true },
     { Gatsby: true },
-    { Design: true },
-    { Flutter: false },
+    { Flutter: true },
+    { WordPress: true },
   ]);
   const [tagsSeleccionats, setTagsSeleccionats] = useState([
     "React",
     "HTML",
     "CSS",
     "Gatsby",
-    "Design",
     "Flutter",
+    "Wordpress",
   ]);
   const canviarFiltresProjectes = () => {
     setArrayTags(refsArray.current.map((r) => ({ [r.value]: r.checked })));

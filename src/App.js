@@ -88,9 +88,7 @@ function App() {
           <h2>
             <mark>About me</mark>
           </h2>
-          <h3>
-            <mark>Education</mark>
-          </h3>
+
           <AboutMe />
         </div>
         <SvgBaix />
