@@ -38,8 +38,9 @@ export default function AboutMe() {
       lloc: "Escola Pia Nostra Senyora",
       descripcio: (
         <p>
-          CFGS Multiplatform Apps Development. Teaching 3 modules: "Databases",
-          "Data Accessand Business Management Systems"
+          CFGS Multiplatform Apps Development. Teaching Relational Databases
+          design and SQL queries, including MySQL and PostgreSQL. And
+          programming Databases with Pg/PlSQL.
         </p>
       ),
     },

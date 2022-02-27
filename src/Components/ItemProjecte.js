@@ -20,9 +20,11 @@ export default function ItemProjecte({
         <h4>{descripcio}</h4>
         {tags.map((t, i) => {
           return (
-            <span key={i} className="portfolio-tag">
-              {t}
-            </span>
+            <>
+              <span key={i} className="portfolio-tag">
+                {t}
+              </span>{" "}
+            </>
           );
         })}
         <p>{contingut}</p>
