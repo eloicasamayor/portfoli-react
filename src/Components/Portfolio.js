@@ -118,6 +118,16 @@ export default function Portfolio() {
       descripcioFoto: "Banking app UI Challange",
       link: "https://eloicasamayor.github.io/UIChallenge_BankingApp/#/detail_screen",
     },
+    {
+      id: 12,
+      titol: "Projecte 12",
+      descripcio: "Birthday reminder flutter app",
+      img: "https://i.postimg.cc/BQgcckLT/sdfsadf.png",
+      tags: ["Flutter", "UX/UI"],
+      contingut: "Flutter app to be reminded on every birthday",
+      descripcioFoto: "Birthday reminder app screenshot",
+      link: "https://play.google.com/store/apps/details?id=com.cofoi_apps.birthday_reminder",
+    },
   ];
 
   const [mostrarProjectes, setMostrarProjectes] = useState([
