@@ -128,9 +128,20 @@ export default function Portfolio() {
       descripcioFoto: "Birthday reminder app screenshot",
       link: "https://play.google.com/store/apps/details?id=com.cofoi_apps.birthday_reminder",
     },
+    {
+      id: 13,
+      titol: "Projecte 13",
+      descripcio: "Todo list app with react redux",
+      img: "https://i.postimg.cc/SxwP2rw3/todo.png",
+      tags: ["React", "Redux"],
+      contingut: "Web application to manage tasks to do",
+      descripcioFoto: "todo app screenshot",
+      link: "https://eloicasamayor.github.io/todo-list-redux/",
+    },
   ];
 
   const [mostrarProjectes, setMostrarProjectes] = useState([
+    true,
     true,
     true,
     true,
@@ -146,6 +157,7 @@ export default function Portfolio() {
     { Gatsby: true },
     { Flutter: true },
     { WordPress: true },
+    { Redux: true },
   ]);
   const [tagsSeleccionats, setTagsSeleccionats] = useState([
     "React",
@@ -154,6 +166,7 @@ export default function Portfolio() {
     "Gatsby",
     "Flutter",
     "Wordpress",
+    "Redux",
   ]);
   const canviarFiltresProjectes = () => {
     setArrayTags(refsArray.current.map((r) => ({ [r.value]: r.checked })));
