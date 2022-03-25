@@ -3,6 +3,27 @@ import { useState, useRef, useEffect } from "react";
 export default function Portfolio() {
   let projectes = [
     {
+      id: 0,
+      titol: "Pokemon App",
+      descripcio: "Pokemon react app",
+      img: "https://www.linkpicture.com/q/pokemons.png",
+      tags: ["html", "css", "React", "redux"],
+      contingut:
+        "API data fetching with REST, redux, internalization, unit-testing and storybook.",
+      descripcioFoto: "Pokemon app with react redux",
+      link: "https://eloicasamayor.github.io/calculadora/",
+    },
+    {
+      id: 14,
+      titol: "CRUD app: Todo list",
+      descripcio: "Todo list with redux",
+      img: "https://www.linkpicture.com/q/todo-crud.png",
+      tags: ["html", "css", "React", "redux", "REST"],
+      contingut: "Redux best practices for CRUD implemented. ",
+      descripcioFoto: "CRUD todo list app",
+      link: "https://eloicasamayor.github.io/todo-list-redux-rest/",
+    },
+    {
       id: 1,
       titol: "Calculadora",
       descripcio: "Calculator app made with React",
