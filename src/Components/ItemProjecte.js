@@ -6,6 +6,7 @@ export default function ItemProjecte({
   contingut,
   descripcioFoto,
   link,
+  source,
 }) {
   return (
     <li className="tarjeta sombra">
@@ -28,10 +29,14 @@ export default function ItemProjecte({
           );
         })}
         <p>{contingut}</p>
-
-        <a className="btn-visitar-projecte" href={link} target="_blank">
-          See the project ❯
-        </a>
+        <div className="project-buttons">
+          <a className="btn-visitar-projecte" href={link} target="_blank">
+            See the project ❯
+          </a>
+          <a className="btn-visitar-projecte" href={source} target="_blank">
+            Source code ❯
+          </a>
+        </div>
         <div className="clear"></div>
       </div>
     </li>
