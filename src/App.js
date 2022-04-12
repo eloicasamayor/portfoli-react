@@ -21,10 +21,6 @@ function App() {
           <br />
           <mark>frontend developer</mark>
         </h1>
-        {/*<div className="pilota-animada"></div>
-        <a className="link-center-home" href="#contact">
-          Contact me
-  </a>*/}
         <div className="about-div">
           <img
             className="img-about_me sombra"
@@ -61,7 +57,6 @@ function App() {
           <h2>
             <mark>About me</mark>
           </h2>
-
           <AboutMe />
         </div>
         <SvgBaix />
