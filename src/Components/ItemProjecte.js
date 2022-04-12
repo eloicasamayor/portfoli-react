@@ -15,9 +15,6 @@ export default function ItemProjecte({
       </div>
 
       <div className="contingut-tarjeta">
-        <h3>
-          <mark>{titol}</mark>
-        </h3>
         <h4>{descripcio}</h4>
         {tags.map((t, i) => {
           return (

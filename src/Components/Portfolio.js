@@ -10,26 +10,23 @@ export default function Portfolio() {
     true,
     true,
     true,
-    true,
   ]);
 
   const [arrayTags, setArrayTags] = useState([
     { React: true },
-    { HTML: true },
-    { CSS: true },
+    { Redux: true },
+    { MUI: true },
     { Gatsby: true },
     { Flutter: true },
     { WordPress: true },
-    { Redux: true },
   ]);
   const [tagsSeleccionats, setTagsSeleccionats] = useState([
     "React",
-    "HTML",
-    "CSS",
+    "Redux",
+    "Material UI",
     "Gatsby",
     "Flutter",
     "Wordpress",
-    "Redux",
   ]);
   const canviarFiltresProjectes = () => {
     setArrayTags(refsArray.current.map((r) => ({ [r.value]: r.checked })));
