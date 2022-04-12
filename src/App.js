@@ -1,10 +1,10 @@
 import "./App.css";
-import Header from "./Header";
+import Header from "./Components/Header";
 
-import SvgBaix from "./SvgBaix";
-import SvgDalt from "./SvgDalt";
-import Form from "./Form";
-import SocialLink from "./SocialLink";
+import SvgBaix from "./Components/SvgBaix";
+import SvgDalt from "./Components/SvgDalt";
+import Form from "./Components/Form";
+import SocialLink from "./Components/SocialLink";
 import { socialLinks } from "./data/socialLinks";
 
 import Portfolio from "./Components/Portfolio";
