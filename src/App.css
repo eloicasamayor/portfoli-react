@@ -150,6 +150,7 @@ p {
   width: 100%;
 }
 #toggle-menu-mobile {
+  color: var(--color-text-blanc);
   display: none;
   float: right;
   padding: 0.9em;
@@ -319,6 +320,7 @@ input[type="checkbox"].toggle.toggle-mode + label {
   position: relative;
   cursor: pointer;
   padding: 0.4em 0;
+  margin: auto;
 }
 
 input[type="checkbox"].toggle.toggle-mode:checked + label i {
