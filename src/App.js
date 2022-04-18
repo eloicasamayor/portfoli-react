@@ -16,11 +16,15 @@ function App() {
       <Header />
 
       <section id="home">
-        <h1>
-          Eloi Casamayor
-          <br />
+        <div id="title-wave">
+          <h1 className="border">Eloi Casamayor</h1>
+          <h1 className="wave">Eloi Casamayor</h1>
+        </div>
+
+        <h1 id="title-frontend">
           <mark>frontend developer</mark>
         </h1>
+
         <div className="about-div">
           <img
             className="img-about_me sombra"

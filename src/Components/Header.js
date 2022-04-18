@@ -10,7 +10,7 @@ export default function Header() {
       document.querySelector("#toggle-menu-mobile").innerHTML = "✕";
     }
   }
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <header className="sticky">
       <span onClick={toggleMenuMobil} id="toggle-menu-mobile">
@@ -33,7 +33,7 @@ export default function Header() {
                   value="style-mode"
                   ref={null}
                   onChange={() => {
-                    setDarkMode(!darkMode);
+                    setDarkMode((d) => !d);
                     changeTheme(darkMode ? themes.light : themes.dark);
                   }}
                   className="toggle toggle-mode"
@@ -45,20 +45,6 @@ export default function Header() {
               </>
             )}
           </ThemeContext.Consumer>
-          {/* <ThemeContext.Consumer>
-            {({ changeTheme }) => (
-              <button
-                color="link"
-                onClick={() => {
-                  setDarkMode(!darkMode);
-                  changeTheme(darkMode ? themes.light : themes.dark);
-                }}
-              >
-                <i className={darkMode ? "fas fa-sun" : "fas fa-moon"}></i>
-                <span className="d-lg-none d-md-block">Switch mode</span>
-              </button>
-            )}
-          </ThemeContext.Consumer> */}
         </nav>
       </div>
     </header>
