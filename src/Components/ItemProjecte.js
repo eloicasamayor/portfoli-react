@@ -16,13 +16,11 @@ export default function ItemProjecte({
 
       <div className="contingut-tarjeta">
         <h4>{descripcio}</h4>
-        {tags.map((t, i) => {
+        {tags.map((tag, i) => {
           return (
-            <>
-              <span key={i} className="portfolio-tag">
-                {t}
-              </span>{" "}
-            </>
+            <span key={i} className="portfolio-tag">
+              {tag}
+            </span>
           );
         })}
         <p>{contingut}</p>

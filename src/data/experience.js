@@ -30,14 +30,25 @@ export const educacionItems = [
 ];
 export const experienceItems = [
   {
-    data: "September 2021",
+    data: "May 2022",
+    titol: "Junior frontend developer",
+    lloc: "Nice People At Work",
+    descripcio: (
+      <p>
+        Develops new features and resolves bugs in a big realtime data platform
+        built with react and redux. Works in a team that uses CD/CI practices
+        and agile methodology.
+      </p>
+    ),
+  },
+  {
+    data: "September 2021 to may 2022",
     titol: "Databases Teacher",
     lloc: "Escola Pia Nostra Senyora",
     descripcio: (
       <p>
         CFGS Multiplatform Apps Development. Teaching Relational Databases
-        design and SQL queries, including MySQL and PostgreSQL. And programming
-        Databases with Pg/PlSQL.
+        design and SQL queries, including MySQL and PostgreSQL.
       </p>
     ),
   },
@@ -61,13 +72,10 @@ export const experienceItems = [
     titol: "Junior web developer",
     lloc: "LaGenciaWeb",
     descripcio: (
-      <>
-        <p>
-          Developed and implemented web solutions based on{" "}
-          <b>Wordpress and Joomla</b>.
-        </p>
-        <p>Performance and SEO optimization. Agile Methodology</p>
-      </>
+      <p>
+        Developed and implemented web solutions based onnWordpress and Joomla.
+        Performance and SEO optimization. Agile Methodology
+      </p>
     ),
   },
 ];

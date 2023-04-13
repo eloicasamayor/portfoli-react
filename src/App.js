@@ -35,17 +35,18 @@ function App() {
 
           <p className="tarjeta sombra">
             Hello, I am Eloi Casamayor Esteve, a experienced software developer
-            who is taking his first steps as a <b>modern frontend developer</b>.
+            who is now working as a react developer
             <br />
             <br />
             With a 5 years background in production-ready software development
-            for engineering purposes, I am reorienting my carrer towards this
-            amazing and very active field.
+            for engineering purposes, one year ago I reoriented my carrer
+            towards the world of frontend web development.
             <br />
             <br />
-            Having attained a gread domain in HTML and CSS, now I am centered on{" "}
-            <b>React application</b> development, including most used libraries
-            as Redux and React-based frameworks as Gatsby.
+            Having attained a gread domain in HTML and CSS, now I am centered on
+            <b>React application</b> development using Javascript as well as
+            Typescript, including most used libraries as Redux and modern
+            frameworks like Next.
             <br />
             <br />
             Do you want to know more about me? Have a look take a look at my
@@ -104,7 +105,7 @@ function App() {
       </section>
 
       <footer>
-        <p>©copyright Eloi Casamayor 2022</p>
+        <p>©copyright Eloi Casamayor 2023</p>
       </footer>
     </div>
   );

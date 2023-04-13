@@ -1,7 +1,17 @@
 export const projectes = [
   {
+    descripcio: "Football leagues management",
+    img: "https://www.linkpicture.com/q/Captura_26.png",
+    tags: ["React", "redux", "tailwind", "supabase"],
+    contingut:
+      "CRUD of leagues, teams and players using redux toolkit, tailwind and flowbite for the styles and supabase for the backend",
+    descripcioFoto: "Pokemon app with react redux",
+    link: "https://my-league.netlify.app/",
+    source: "https://github.com/eloicasamayor/my-league-rtk-query",
+  },
+  {
     descripcio: "Music search using the itunes API",
-    img: "https://www.linkpicture.com/q/Captura_29.png",
+    img: "https://www.linkpicture.com/q/itunes_api_project_eloi.png",
     tags: ["React", "redux", "mui"],
     contingut: "API data fetching with REST, redux, and Material UI.",
     descripcioFoto: "Pokemon app with react redux",
@@ -10,7 +20,7 @@ export const projectes = [
   },
   {
     descripcio: "Pokemon react app",
-    img: "https://www.linkpicture.com/q/pokemons.png",
+    img: "https://www.linkpicture.com/q/pokemon-react-app-eloi.png",
     tags: ["React", "redux"],
     contingut:
       "API data fetching with REST, redux, internalization, unit-testing and storybook.",
@@ -20,7 +30,7 @@ export const projectes = [
   },
   {
     descripcio: "Todo list with redux",
-    img: "https://www.linkpicture.com/q/Captura_27.png",
+    img: "https://www.linkpicture.com/q/todo-list-react-redux-eloi_1.png",
     tags: ["mui", "React", "redux", "REST"],
     contingut: "Redux best practices for CRUD implemented. ",
     descripcioFoto: "CRUD todo list app",
@@ -29,7 +39,7 @@ export const projectes = [
   },
   {
     descripcio: "Calculator app made with React",
-    img: "https://www.linkpicture.com/q/calculadora.png",
+    img: "https://www.linkpicture.com/q/calculadora-react-eloi.png",
     tags: ["React"],
     contingut: "Little calculator app made with React.",
     descripcioFoto: "Calculadora feta amb React",
@@ -48,14 +58,14 @@ export const projectes = [
   },
   {
     descripcio: "Portfolio Eloi Casamayor",
-    img: "https://www.linkpicture.com/q/Captura_16.png",
+    img: "https://www.linkpicture.com/q/portfolio-eloi-react.png",
     tags: ["React"],
     contingut: "The website you are currently seing. Made with React.",
     descripcioFoto: "portfolio Eloi Casamayor",
     link: "https://eloicasamayor.github.io/portfolio/",
     source: "https://github.com/eloicasamayor/portfolio",
   },
-  {
+  /* {
     descripcio: "Blog website done with Gatsby and Contentful",
     img: "https://www.linkpicture.com/q/Captura_15.png",
     tags: ["React", "GraphQL"],
@@ -108,7 +118,7 @@ export const projectes = [
     contingut: "Wedding website, deployed with WordPress",
     descripcioFoto: "Escolapios Californias' website screenshot",
     link: "https://adrianayrene.com/",
-  },
+  }, 
   {
     descripcio: "Banking app UI Challange",
     img: "https://i.postimg.cc/G3KDTYst/Captura3.png",
@@ -126,14 +136,5 @@ export const projectes = [
     descripcioFoto: "Birthday reminder app screenshot",
     link: "https://play.google.com/store/apps/details?id=com.cofoi_apps.birthday_reminder",
     source: "https://github.com/eloicasamayor/BirthdayReminder",
-  },
-  {
-    descripcio: "Todo list app with react redux",
-    img: "https://i.postimg.cc/SxwP2rw3/todo.png",
-    tags: ["React", "Redux"],
-    contingut: "Web application to manage tasks to do",
-    descripcioFoto: "todo app screenshot",
-    link: "https://eloicasamayor.github.io/todo-list-redux/",
-    source: "https://github.com/eloicasamayor/todo-list-redux",
-  },
+  },*/
 ];

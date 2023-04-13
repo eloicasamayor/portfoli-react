@@ -4,10 +4,11 @@ export default function AboutMe() {
   return (
     <>
       <h3>
-        <mark>Education</mark>
+        <mark>Experience</mark>
       </h3>
-      <div className="tarjeta sombra education">
-        {educacionItems.map((a, i) => (
+
+      <div className="tarjeta sombra experience">
+        {experienceItems.map((a, i) => (
           <AboutMeItem
             key={i}
             data={a.data}
@@ -19,11 +20,10 @@ export default function AboutMe() {
       </div>
       <div className="separacio"></div>
       <h3>
-        <mark>Experience</mark>
+        <mark>Education</mark>
       </h3>
-
-      <div className="tarjeta sombra experience">
-        {experienceItems.map((a, i) => (
+      <div className="tarjeta sombra education">
+        {educacionItems.map((a, i) => (
           <AboutMeItem
             key={i}
             data={a.data}
