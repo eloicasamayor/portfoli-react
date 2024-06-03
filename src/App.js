@@ -38,11 +38,19 @@ function App() {
             carrer towards frontend development. I consider myself a responsable
             person who is good at working in a team and who enjoys using
             creativity to solve problems.
-            <br />I love living in the small town where I live, where I enjoy
-            running through nature. I also practice indoor football and touch.
             <br />
-            Do you want to know more about me? Have a look take a look at my
-            projects and contact me! rugby!
+            <br />
+            Currently I am working with the frontend team in VASS Company. We
+            are in charge of the development and maintainance of an crucial
+            application for a financial institution.
+            <br />
+            <br />
+            I love living in the small town where I live, where I enjoy running
+            through nature. I also practice indoor football and touch rugby.
+            <br />
+            <br />
+            Do you want to know more about me? Take a look at my projects and
+            get in touch!
           </p>
         </div>
         <SvgBaix />
