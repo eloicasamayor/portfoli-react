@@ -68,7 +68,7 @@ export default function Portfolio() {
                   key={"projecte" + i}
                   titol={p.titol}
                   descripcio={p.descripcio}
-                  img={p.img}
+                  img={`https://eloicasamayor.github.io/portfolio/img/${p.img}`}
                   tags={p.tags}
                   contingut={p.contingut}
                   descripcioFoto={p.descripcioFoto}
