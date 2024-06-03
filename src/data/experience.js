@@ -29,9 +29,19 @@ export const educacionItems = [
   },
 ];
 export const experienceItems = [
+  { 
+    data: "June 2023 (current)",
+    titol: "Frontend developer",
+    lloc: "Vass Company",
+    descripcio: (
+      <p>
+        Develops and maintains the frontend of CaixaBank’s ATM. Coordinates with UX and business teams for new funcionalities. Maintains legacy code. Responsible for maintaining critical app components crucial to the bank's operations.
+      </p>
+    ),
+  },
   {
-    data: "May 2022",
-    titol: "Junior frontend developer",
+    data: "May 2022 to June 2023",
+    titol: "Frontend developer",
     lloc: "Nice People At Work",
     descripcio: (
       <p>

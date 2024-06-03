@@ -34,23 +34,9 @@ function App() {
           <div className="img-wrapper"></div>
 
           <p className="tarjeta sombra">
-            Hello, I am Eloi Casamayor Esteve, a experienced software developer
-            who is now working as a react developer
-            <br />
-            <br />
-            With a 5 years background in production-ready software development
-            for engineering purposes, one year ago I reoriented my carrer
-            towards the world of frontend web development.
-            <br />
-            <br />
-            Having attained a gread domain in HTML and CSS, now I am centered on
-            <b>React application</b> development using Javascript as well as
-            Typescript, including most used libraries as Redux and modern
-            frameworks like Next.
-            <br />
-            <br />
-            Do you want to know more about me? Have a look take a look at my
-            projects and contact me!
+          Having started working as a C# programmer, in 2022 I reoriented my carrer towards frontend development. I consider myself a responsable person who is good at working in a team and who enjoys using creativity to solve problems.
+          <br/>
+          I love living in the small town where I live, where I enjoy running through nature. I also practice indoor football and touch rugby!
           </p>
         </div>
         <SvgBaix />

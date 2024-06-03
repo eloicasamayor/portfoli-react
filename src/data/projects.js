@@ -39,7 +39,7 @@ export const projectes = [
   },
   {
     descripcio: "Calculator app made with React",
-    img: "https://www.linkpicture.com/q/calculadora-react-eloi.png",
+    img: "img/eloi-sense-background.png",
     tags: ["React"],
     contingut: "Little calculator app made with React.",
     descripcioFoto: "Calculadora feta amb React",
