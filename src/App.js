@@ -34,9 +34,15 @@ function App() {
           <div className="img-wrapper"></div>
 
           <p className="tarjeta sombra">
-          Having started working as a C# programmer, in 2022 I reoriented my carrer towards frontend development. I consider myself a responsable person who is good at working in a team and who enjoys using creativity to solve problems.
-          <br/>
-          I love living in the small town where I live, where I enjoy running through nature. I also practice indoor football and touch rugby!
+            Having started working as a C# programmer, in 2022 I reoriented my
+            carrer towards frontend development. I consider myself a responsable
+            person who is good at working in a team and who enjoys using
+            creativity to solve problems.
+            <br />I love living in the small town where I live, where I enjoy
+            running through nature. I also practice indoor football and touch.
+            <br />
+            Do you want to know more about me? Have a look take a look at my
+            projects and contact me! rugby!
           </p>
         </div>
         <SvgBaix />
